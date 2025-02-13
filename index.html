@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Nombre de la página</h1>
+        <nav>
+            <ul>
+                <li><a href="#explorar">Explorar</a></li>
+                <li><a href="#iniciar-sesion">Iniciar Sesión</a></li>
+                <li><a href="#registrarse">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página de inicio -->
+    <main>
+        <!-- Sección Explorar -->
+        <section id="explorar">
+            <h2>Explorar</h2>
+            <p>Visualizar publicaciones sin iniciar sesión o registrarse</p>
+            <div class="imagenes-publicadas">
+                <div class="imagen-publicada">
+                    <img src="imagen1.jpg" alt="Imagen publicada 1">
+                    <!-- <p>Descripción de lo que se va a encontrar</p> -->
+                </div>
+                <div class="imagen-publicada">
+                    <img src="imagen2.jpg" alt="Imagen publicada 2">
+                    <!-- <p>Descripción de lo que se va a encontrar</p> -->
+                </div>
+                <div class="imagen-publicada">
+                    <img src="imagen3.jpg" alt="Imagen publicada 3">
+                    <!-- <p>Descripción de lo que se va a encontrar</p> -->
+                </div>
+                <div class="imagen-publicada">
+                    <img src="imagen4.jpg" alt="Imagen publicada 4">
+                    <!-- <p>Descripción de lo que se va a encontrar</p> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería de Imágenes -->
+        <section id="galeria">
+            <h2>Galería de Imágenes</h2>
+            <div class="galeria">
+                <!-- Aquí los usuarios pueden agregar sus imágenes -->
+                <hr> <!-- linea para dividir la pagina en secciones -->
+                <div class="imagen-publicada">
+                    <img src="imagen1.jpg" alt="Imagen referencia 1">
+                    <p>Descripción de lo que se va a encontrar</p>
+                </div>
+                <hr> <!-- linea para dividir la pagina en secciones -->
+                <div class="imagen-publicada">
+                    <img src="imagen2.jpg" alt="Imagen referencia 2">
+                    <p>Descripción de lo que se va a encontrar</p>
+                </div>
+                <hr> <!-- linea para dividir la pagina en secciones -->
+                <div class="imagen-publicada">
+                    <img src="imagen3.jpg" alt="Imagen referencia 3">
+                    <p>Descripción de lo que se va a encontrar</p>
+                </div>
+                <hr> <!-- linea para dividir la pagina en secciones -->
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+        </section>
+
+        <hr> <!-- linea para dividir la pagina en secciones -->
+        <hr> <!-- linea para dividir la pagina en secciones -->
+        <hr> <!-- linea para dividir la pagina en secciones -->
+
+        <!-- Sección Registro -->
+        <section id="registrarse">
+            <h2>Registrarse</h2>
+            <form action="/registrarse" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <!-- Sección Iniciar Sesión -->
+        <section id="iniciar-sesion">
+            <h2>Iniciar Sesión</h2>
+            <form action="/iniciar-sesion" method="post">
+                <label for="correo-login">Correo Electrónico:</label>
+                <input type="email" id="correo-login" name="correo" required>
+                
+                <label for="contrasena-login">Contraseña:</label>
+                <input type="password" id="contrasena-login" name="contrasena" required>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
