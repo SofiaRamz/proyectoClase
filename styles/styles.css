@@ -1,3 +1,11 @@
+/* Bebemos agregar los datos como colores y tamaño de la letra fijos */
+:root{
+    --primay-color: #fa8072;
+    --secundary-color: white;
+    --header-size: /*Tamaño del texto*/;
+    --font: /*fondo*/;
+}
+
 /* Estilo general */
 * {
     box-sizing: border-box;
