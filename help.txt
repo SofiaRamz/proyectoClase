@@ -1,0 +1,184 @@
+En este texto voy a agregar mi archivo de ayuda por los comandos que se me olviden 
+
+<!DOCTYPE html>
+<html lang="en">  <!-- lenguaje que va a utilizar -->
+<head>
+    <meta charset="UTF-8"> <!-- caracteres que va a utilizar la pagina -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala de la pagina -->
+    <title>Sofía Ramírez Chávez</title> <!-- titulo -->
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"> <!-- dinde estan los recursos que ademas utilizaremos -->
+    <link rel="shortcut icon" href="./Recursos/Imagenes/Icon.png"> <!-- icono a la pagina -->
+</head>
+<body>
+    <!-- los comentarios se ponen con ctrl + K + C -->
+    
+    <!-- Todo debe de ir dentro de estas secciones en el sguiente orden -->
+    <header> <!-- encabezado -->
+    </header>
+
+    <nav> <!-- barra de navegación -->
+        <div> <!-- Dividir en secciones (opcional) -->
+        </div>
+    </nav>
+
+    <aside> <!-- aside izquierdo -->
+        <div> <!-- Dividir en secciones (opcional) -->
+        </div>
+    </aside>
+    <aside> <!-- aside derecho -->
+        <div> <!-- Dividir  en secciones (opcional) -->
+        </div>
+    </aside>
+
+    <article> <!-- Todo lo que se vaya a mortrar -->
+        <div> <!-- Dividir en secciones (opcional) -->
+        </div>
+    </article>
+
+    <footer> <!-- Pie de pagina -->
+        <div> <!-- Dividir en secciones (opcional) -->
+        </div>
+    </footer>
+
+    Este texto va a salir en mi pagina web <!-- El texto que se escriba aparecera automaticamente en la pantalla -->
+    <h1>Este es un h1</h1>
+    <h2>Este es un h2</h2>
+    <h3>Este es un h3</h3>
+    <h4>Este es un h4</h4>
+    <h5>Este es un h5</h5>
+    <h6>Este es un h6</h6>
+    
+    <hr> <!-- linea para dividir la pagina en secciones -->
+
+    <!-- Utilizado para poner referencias en la misma pestaña -->
+
+    <a href="https://www.w3schools.com/html/html_intro.asp">Este es un link a la referencia del curso en la misma pestaña</a> 
+    <br>
+    <!-- Utilizado para poner referencias en una nueva pestaña -->
+    <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">Este es un link a la rederencia del curso en diferente pestaña</a> 
+    <hr>
+    
+    <p>Este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo,  este es un texto en parrafo, 
+        este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo,
+        este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo,
+        este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo, este es un texto en parrafo,
+    </p>
+
+    <br> <!-- Se encarga de hacer un salto de linea -->
+
+    <!-- Agregar imagenes con las dimensiones establecidas -->
+    <!-- en Alt va un nombre de la imagen, se va a ver solamente cuando la imagen no se muestra -->
+    <img src="./Recursos/Imagenes/img1.jpg" alt="Estos son los tulipanes 1" width="200">
+    <img src="./Recursos/Imagenes/img2.jpg" alt="" width="250">    
+    <img src="./Recursos/Imagenes/img3.jpg" alt="" width="200">
+    <br>
+    <!-- Texto sin salto de linea -->
+    <span>Texto 1</span>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    
+    <!-- Crear una lista desordenada-->
+    <ul>
+        <li><a href="">Link 1</a>Texto sobre el link 1</li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+    </ul>
+
+    <!-- Crear una lista ordenada-->
+    <ol>
+        <li><a href="">Link 1</a>Texto sobre el link 1</li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+    </ol>
+
+    <img src="./Recursos/Videos/gif1.gif" alt="Gif tulipanes"> 
+
+    <!-- Reproducir video -->
+    <!-- <video width="400" height="240" controls>  con esto se modifican ambas dimensiones-->
+    <video width="200" controls>
+        <source src="./Recursos/Videos/Video1.mp4" type="video/mp4">
+    </video> 
+
+    <br> <br>
+    <!-- Reproducir audio -->
+    <audio controls>
+        <source src="./Recursos/Audio/Adele - Someone Like You.mp3" type="audio/mpeg">
+    </audio> 
+
+    <br> <br>
+    <!-- Agregar iconos de diferentes tamaños -->
+    <i class="fa fa-heart" aria-hidden="true"></i> 
+    <i class="fa fa-heart fa-lg" aria-hidden="true"></i> 
+    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-heart fa-3x" aria-hidden="true"></i>
+    <i class="fa fa-heart fa-4x" aria-hidden="true"></i> 
+    <i class="fa fa-heart fa-5x" aria-hidden="true"></i>
+
+    <br><br>
+    <!-- Insertar tablas -->
+    <table style="border: 1px solid black;"> <!-- Esta forma de agregar estilo no es correcta pero es la mas rapida -->
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black;">Sofía</td>
+          <td>Ramírez</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>Jessica</td>
+          <td>Ramírez</td>
+          <td>16</td>
+        </tr>
+    </table> 
+
+    <br><br>
+    <!-- Solicitar datos a los usuarios -->
+     <form action="">
+        <!-- Solicitar nombre, apellido -->
+        <label for="Nombre">Nombre:</label><br>
+        <input type="text" name="Nombre" id="Nombre"><br> <!-- Se utiliza para manipular los datos y siempre llevar name="" e id="" -->
+        <label for="Apellido">Apellido:</label><br>
+        <input type="text" name="Apellido" id="Apellido"><br>
+        <!-- Solicitar dato numerico -->
+        <label for="Edad">Edad:</label><br>
+        <input type="number" name="Edad" id="Edad"><br>
+        <!-- solicitar una fecha -->
+        <label for="Fecha">Fecha de nacimiento:</label><br>
+        <input type="date" name="Fecha" id="Fecha"><br>
+        <!-- Solicitar la hora -->
+        <label for="Hora">Hora:</label><br>
+        <input type="time" name="Hora" id="Hora"><br>
+        <!-- Seleccionar una opción -->
+        <label for="Genero">Genero:</label><br>
+        <input type="radio" name="Genero" id="Genero" value="Masculino">Masculino
+        <input type="radio" name="Genero" id="Genero" value="Femenino">Femenino
+        <!-- Seleccionar varias opciones -->
+        <br><label for="Gustos">Gustos:</label><br>
+        <input type="checkbox" name="Gustos" id="Gustos" value="Leer">Leer
+        <input type="checkbox" name="Gustos" id="Gustos" value="Escribir">Escribir
+        <input type="checkbox" name="Gustos" id="Gustos" value="Pintar">Pintar
+        <input type="checkbox" name="Gustos" id="Gustos" value="Dibujar">Dibujar
+        <!-- Agregar un texto -->
+        <br><label for="Comentario">comentario:</label><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+        <!-- Agregar un archivo -->
+        <label for="Curriculum">Sube tu hoja de vida:</label>
+        <input type="file" name="Curriculum" id="Curriculum"><br>
+        <!-- Agregar la Contraseña -->
+        <label for="Password">Contraseña:</label><br>
+        <input type="password" id="Password" name="Password"><br>
+        <!-- Seleccionar un color -->
+        <label for="favcolor">Seleccione su color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+        <!-- Modificar un rango -->
+        <label for="vol">Volumen (entre 0 y 100):</label>
+        <input type="range" id="vol" name="Volumen" min="0" max="100"><br>
+        <!-- Botones -->
+        <br><input type="button" value="Cancelar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

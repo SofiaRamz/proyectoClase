@@ -1,0 +1,140 @@
+/* Estilo general */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #fa8072; /*#e60023*/
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .titulo {
+    display: flex;
+    align-items: center;
+}
+
+header .titulo img {
+    margin-right: 10px; /* Espacio entre el logo y el título */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección Explorar y Galería */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-family: 'Lobster', cursive;
+    color: #fa8072; /*#e60023*/
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.imagenes-publicadas, .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.imagen-publicada {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    padding: 10px; /* Espacio interior */
+    margin: 10px;  /* Espacio exterior */
+}
+
+.imagen-publicada:hover {
+    transform: scale(1.05);
+}
+
+.imagen-publicada img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;  /* Linea divisora entre imagenes */
+}
+
+.imagen-publicada p {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Formulario */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #fa8072; /*#e60023*/
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #fa8072; /*#cc001f*/
+}
